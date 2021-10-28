@@ -250,6 +250,7 @@ function create_local_image(
                               package_compile;
                               user_defined_labels,
                              )
+  print(dockerfile)
   open(joinpath(responder.build_dir, "Dockerfile"), "w") do f
     write(f, dockerfile)
   end
